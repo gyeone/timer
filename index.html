@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>타이머</title>
+    </head>
+    <body>
+        <section>
+            <h2>TIMER</h2>
+            <div class="time-container">
+                <div class="hrs-container">
+                    <label for="hrs">HRS</label>
+                    <input
+                        id="hrs"
+                        type="button"
+                        value="00"
+                        onclick="increaseHrs()"
+                    />
+                </div>
+                <span>:</span>
+                <div class="min-container">
+                    <label for="min">MIN</label>
+                    <input
+                        id="min"
+                        type="button"
+                        value="00"
+                        onclick="increaseMin()"
+                    />
+                </div>
+                <span>:</span>
+                <div class="sec-container">
+                    <label for="sec">SEC</label>
+                    <input
+                        id="sec"
+                        type="button"
+                        value="00"
+                        onclick="increaseSec()"
+                    />
+                </div>
+            </div>
+            <div class="manual">
+                <button id="start">START</button>
+                <button id="reset" onclick="reset()">RESET</button>
+            </div>
+        </section>
+        <script src="./index.js"></script>
+    </body>
+</html>
